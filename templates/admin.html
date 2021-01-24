@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}  
+    <!-- Jinja 2  -->
+    {% if username == "thongchai" %}
+        <h1>ยินดีต้อนรับเข้าสู่หน้า Admin</h1>
+        <img src="../static/cat2.jpg" alt="" width="300">
+    {% else %}
+        <h1>ยินดีต้อนรับเข้าสู่หน้า User</h1>
+        <img src="../static/cat1.jpeg" alt="" width="300">
+    {% endif%}
+
+ 
+    <h2>Hello !! {{myname}}</h2>
+    <h3>age {{age}}</h3>
+{% endblock %}
